@@ -32,11 +32,10 @@ body, html {
 }
 
 	
-@supports not (-webkit-overflow-scrolling: touch){ /* CSS for other than iOS devices */ 
-    .x-bg-layer-lower-image {
-		background-attachment: fixed;
-  	    background-size: cover;
-	}
+@media (max-width:640px) {
+  section {
+    background-attachment:initial;
+  }
 }
 	
 	
