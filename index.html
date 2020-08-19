@@ -18,7 +18,7 @@ body, html {
 
 .parallax1 {
   /* The image used */
-  background-image: url("chitrapat\san_antonio.png");
+  background-image: url("background_image_001.jpeg");
 
   /* Set a specific height */
   
@@ -32,14 +32,12 @@ body, html {
 }
 
 	
-/* ===== Style for smartphone and iPad in portrait & landscape== =  */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 1024px)  {  
-.sp-page-builder .page-content #noparallax {
-    background-attachment: unset !important;
-    background-position: center top !important; }
-    }
+@supports not (-webkit-overflow-scrolling: touch){ /* CSS for other than iOS devices */ 
+    .x-bg-layer-lower-image {
+		background-attachment: fixed;
+  	    background-size: cover;
+	}
+}
 	
 	
 .text-block {
